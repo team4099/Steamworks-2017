@@ -8,7 +8,7 @@ class FlightStickControlBoard private constructor(): ControlBoard {
     private val operator: Gamepad = XboxOneGamepad(2)
 
     override val throttle: Double
-        get() = flightStick.throttle
+        get() = flightStick.pitch
 
     override val turn: Double
         get() = steeringWheel.steer
